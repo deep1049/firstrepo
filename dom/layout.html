@@ -10,11 +10,23 @@
     <h1 id="head">masai school</h1>
     <button onclick="likesme()">LIKE</button>
     <button onclick="dislikeme()">DISLIKE</button>
+    <button onclick="resetit()">RESET</button>
+    <button onclick="complete()">MARK AS COMPLETE</button>
 
 </body>
 </html>
 <script>
     function likesme(){
         document.getElementById("head").innerText="some likes me";
+    }
+    function dislikeme(){
+        document.getElementById("head").innerText="someone dislikes me";
+    }
+    function resetit(){
+        document.getElementById("head").innerText="reset data";
+
+    }
+    function complete(){
+        document.getElementById("head").innerText="task compteted";
     }
 </script>
