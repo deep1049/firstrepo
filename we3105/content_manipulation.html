@@ -15,18 +15,24 @@
 	<script type="text/javascript">
 		function setFirstName() {
 			// Change the content of h1 to your first name
+            document.getElementById("firstname").innerText="Pardeep";
 		}
 
 		function setLastName() {
+            document.getElementById("lastname").innerText="Singh";
 			// Change the content of div to your last name
 		}
 
 		function setFullName() {
 			// Change the content of p to your full name (firstname - lastname)
+            document.getElementById("fullname").innerText="Pardeep Singh";
 		}
 
 		function resetDefaults(){
 			// reset the firstname, lastname, and fullname to empty values
+            document.getElementById("firstname").innerText="Hello";
+            document.getElementById("lastname").innerText="MASAI";
+            document.getElementById("fullname").innerText="School";
 		}
 	</script>
 </body>
