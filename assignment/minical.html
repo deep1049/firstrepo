@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="first num" type="number" placeholder="enter first number">
+    <input id="second num" type="number" placeholder="enter second number">
+    <button onclick="add()">ADD</button>
+    <button onclick="sub()">SUBTRACT</button>
+    <button onclick="mul()">MULTIPLY</button>
+    <button onclick="div()">DIVIDE</button>
+    <h1 id="ans">ANSWER</h1>
+</body>
+</html>
+<script>
+ function add(){
+    let x=+ document.getElementById("first num").value;
+    let y=+ document.getElementById("second num").value;
+    let z=x+y;
+    document.getElementById("ans").innerText=z;
+
+ }
+ function sub(){
+    let x=+ document.getElementById("first num").value;
+    let y=+ document.getElementById("second num").value;
+    let z=x-y;
+    document.getElementById("ans").innerText=z;
+
+ }
+ function mul(){
+    let x=+ document.getElementById("first num").value;
+    let y=+ document.getElementById("second num").value;
+    let z=x*y;
+    document.getElementById("ans").innerText=z;
+ }
+ function div(){
+    let x=+ document.getElementById("first num").value;
+    let y=+ document.getElementById("second num").value;
+    let z=x/y;
+    document.getElementById("ans").innerText=z;
+ }
+</script>
