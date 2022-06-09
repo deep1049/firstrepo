@@ -96,6 +96,9 @@
             color: white;
             font-size: 30px;
         }
+        input{
+            background-color: grey;
+        }
 
     </style>
 </head>
@@ -106,7 +109,7 @@
             <div>2019</div>
         </div>
     
-     <input type="number">
+     <input type="number" >
     
      <div id="keyboard">
          <div class="green">1</div>
@@ -129,6 +132,7 @@
 <script>
     let target1=document.querySelector("#keyboard>div");
      let bag="";
+     console.log(target1.length)
      for(i=0;i<target1.length;i++){
        target1[i].addEventListener("click",myfunction)  
      }
