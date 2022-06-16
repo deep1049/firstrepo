@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 5px;
+            border-radius: 5px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+   
+</body>
+<script>
+    let btnarr=[
+               {name:"primary",bgcolor:"blue",color:"white"},
+               {name:"secodary",bgcolor:"grey",color:"white"},
+               {name:"success",bgcolor:"green",color:"white"},
+               {name:"danger",bgcolor:"red",color:"white"},
+               {name:"warning",bgcolor:"yellow",color:"black"},
+               {name:"info",bgcolor:"blue",color:"white"},
+               {name:"ligth",bgcolor:"white",color:"black"},
+               {name:"dark",bgcolor:"black",color:"white"},
+               {name:"link",bgcolor:"white",color:"blue"},
+               
+        
+    ]
+    let name= ["Primary","Secondary","Success","Danger","Warning","Info","Light","Dark","Link"]; 
+    let bgcolor=["blue","grey","green","red","yellow","blue","white","black","white"];  
+    let color=["white","white","white","white","black","white","black","white","blue"];
+    btnarr.forEach(function(elem){
+     let btn=document.createElement("button");
+      btn.innerText=elem.name;
+      btn.style.backgroundColor=elem.bgcolor;
+      btn.style.color=elem.color;
+    //   console.log(btnarr[i].name);
+      
+      document.querySelector("body").append(btn);
+    })
+   
+</script>
+</html>

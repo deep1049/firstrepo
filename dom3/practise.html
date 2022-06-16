@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: blue;
+        }
+        .common{
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id="name" type="text" >
+        <input id="email" type="email">
+        <input type="submit" >
+    </form>
+    <h1></h1>
+    <h2></h2>
+</body>
+<script>
+    let form= document.querySelector("form");
+    form.addEventListener("submit",function(){
+        event.preventDefault();
+        let input1=document.querySelector("#name").value;
+        let input2=document.querySelector("#email").value;
+        console.log(input1,input2);
+        document.querySelector("h1").innerText=input1;
+        document.querySelector("h2").innerText=input2;
+        let head1=document.createElement("h3");
+        head1.innerText=input1;
+        head1.setAttribute("id","container");
+
+        let head2=document.createElement("h4");
+        head2.innerText=input2;
+        let a=document.createElement("a");
+        a.innerText="masai school";
+        a.setAttribute("href","https://www.masaischool.com/");
+
+        document.querySelector("body").append(head1,head2,a);
+        head2.setAttribute("class","common");
+        
+
+    })
+</script>
+</html>
